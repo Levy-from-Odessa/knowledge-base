@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>lab1</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="search">
+			<p>введите обьект</p>
+			<input type="text" class="search_input">
+			<button>Send info</button>
+			<div class="result">
+				1
+			</div>
+		</div>
+		<div class="database">
+			<p>define items</p>
+			<textarea class="database-input items" type="text">
+10:самолет,
+11:летательный аппарат,
+12:птица,
+13:крылья,
+14:ласточка,
+15:перья,
+16:лёгкий,
+17:летать,
+18:Юко,
+19:глагол,
+20:часть речи,
+21:клюв,
+22:археоптерикс,
+23:птеродактиль,
+			</textarea>
+			<p>connections</p>
+			<textarea class="database-input connections" type="text">
+1:имеет часть,
+2:является,
+3:вес,
+4:может,
+5:потомок,
+				
+			</textarea>
+			<p>define binds</p>
+			<textarea class="database-input binds" type="text">
+10:2:11,
+10:1:13,
+12:1:13,
+14:2:12,
+13:1:15,
+15:3:16,
+11:4:17,
+18:2:14,
+17:2:19,
+19:2:20,
+12:1:21,
+12:5:22,
+22:5:23,
+23:4:17,		
+			</textarea>
+		</div>
+	</div>
+	
+	<script src="./app.js">
+	</script>
+</body>
+
+</html>
